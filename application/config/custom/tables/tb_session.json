@@ -1,0 +1,22 @@
+{
+  "primary_keys" : [
+    "id"
+  ],
+  "fields" : {
+    "id" : {
+      "type": "VARCHAR",
+      "constraint": 40
+    },
+    "ip_address" : {
+      "type": "VARCHAR",
+      "constraint": 45
+    },
+    "timestamp" : {
+      "type": "INT",
+      "constraint": 10
+    },
+    "data" : {
+      "type": "BLOB"
+    }
+  }
+}

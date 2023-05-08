@@ -1,0 +1,54 @@
+{
+  "primary_keys" : [
+    "media_idx"
+  ],
+  "fields" : {
+    "media_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true,
+      "auto_increment": true
+    },
+    "media_prop_gnb" : {
+      "type": "VARCHAR",
+      "constraint": 5
+    },
+    "media_prop_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true
+    },
+    "media_cd" : {
+      "type": "VARCHAR",
+      "constraint": 6
+    },
+    "media_link" : {
+      "type": "VARCHAR",
+      "constraint": 2000
+    },
+    "media_srt" : {
+      "type": "INT",
+      "constraint": 3,
+      "unsigned": true,
+      "default": 1
+    },
+    "media_file_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true
+    },
+    "download_cnt" : {
+      "type": "INT",
+      "constraint": 3,
+      "default": 0
+    },
+    "reg_user_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true
+    },
+    "reg_date" : {
+      "type": "DATETIME"
+    }
+  }
+}

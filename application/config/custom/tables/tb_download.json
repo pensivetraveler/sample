@@ -1,0 +1,36 @@
+{
+  "primary_keys" : [
+    "download_idx"
+  ],
+  "fields" : {
+    "download_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true,
+      "auto_increment": true
+    },
+    "media_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true
+    },
+    "download_cd" : {
+      "type": "VARCHAR",
+      "constraint": 6,
+      "null": true
+    },
+    "download_memo" : {
+      "type": "VARCHAR",
+      "constraint": 3000,
+      "null": true
+    },
+    "reg_user_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true
+    },
+    "reg_date" : {
+      "type": "DATETIME"
+    }
+  }
+}

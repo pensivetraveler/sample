@@ -1,0 +1,51 @@
+{
+  "primary_keys" : [
+    "category_idx"
+  ],
+  "fields" : {
+    "category_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true,
+      "auto_increment": true
+    },
+    "category_cd" : {
+      "type": "VARCHAR",
+      "constraint": 6
+    },
+    "category_parent_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "default" : 0
+    },
+    "category_name" : {
+      "type": "VARCHAR",
+      "constraint": 6
+    },
+    "category_depth" : {
+      "type": "TINYINT",
+      "constraint": 3,
+      "default": 1
+    },
+    "category_srt" : {
+      "type": "INT",
+      "constraint": 3,
+      "unsigned": true,
+      "default": 1
+    },
+    "category_media" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true,
+      "null" : true
+    },
+    "reg_user_idx" : {
+      "type": "INT",
+      "constraint": 5,
+      "unsigned": true
+    },
+    "reg_date" : {
+      "type": "DATETIME"
+    }
+  }
+}
